@@ -11,7 +11,6 @@ import utils.StudentValidator;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        // NO MODIFICAR ESTE CÓDIGO
         var estudiante = StudentValidator.validarDatos();
         System.out.println("👤 Estudiante: " + estudiante.nombre());
         System.out.println("✉️  Correo: " + estudiante.correo());
@@ -21,13 +20,13 @@ public class App {
 
 
 
-        demonstrateInsertBST();
-        demonstrateInvertTree();
-        demonstrateListLevels();
-        demonstrateTreeDepth();
+        InsertBST();
+        InvertTree();
+        ListLevels();
+        TreeDepth();
     }
     
-    private static void demonstrateInsertBST() {
+    private static void InsertBST() {
         System.out.println(" ------------INSERTAR EN ARBOL BST---------");
     
         int[] input = {5, 3, 7, 2, 4, 6, 8};
@@ -49,7 +48,7 @@ public class App {
         printTreeHorizontal(root);
     }
     
-    private static void demonstrateInvertTree() {
+    private static void InvertTree() {
         System.out.println("----------- INVERTIR ARBOL BINARIO--------------");
         Node root = new Node(4);
         root.setLeft(new Node(2));
@@ -69,7 +68,7 @@ public class App {
         printTreeHorizontal(inverted);
     }
     
-    private static void demonstrateListLevels() {
+    private static void ListLevels() {
         System.out.println("---------------LISTAR NIVELES---------------");
         
         Node root = new Node(4);
@@ -96,7 +95,7 @@ public class App {
         }
     }
     
-    private static void demonstrateTreeDepth() {
+    private static void TreeDepth() {
         System.out.println("--------------- CALCULAR PROFUNDIDAD------------------");
     
         Node root = new Node(4);
@@ -140,8 +139,9 @@ public class App {
             }
         }
 
-        System.out.println("Sebastian Lopez");
+        
     }
+    
    
     }
 
